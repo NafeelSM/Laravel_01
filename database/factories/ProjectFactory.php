@@ -24,8 +24,10 @@ class ProjectFactory extends Factory
             'status' => fake()->
                                 randomElement(['pending', 'in_progress', 'completed']),
             'image_path' => fake()->imageUrl(),
-            'created_at' => 1,
-            'updated_at' => 1
+            'created_by' => 1,
+            'updated_by' => 1,
+            'created_at' => time(),
+            'updated_at' => time(),
         ];
     }
 }
